@@ -1,0 +1,89 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Login To Dashboard",
+    "line": 1,
+    "id": "login-to-dashboard",
+    "tags": [],
+    "uri": "LoginToDashboard.feature",
+    "elements": [
+      {
+        "id": "login-to-dashboard;login-to-dashboard-with-valid-credentials",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Login to Dashboard with Valid Credentials",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "the user navigates to login page from guest Dashboard",
+            "result": {
+              "status": "failed",
+              "duration": 5301000000,
+              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `//title[text()='PHPTRAVELS - PHPTRAVELS']`, but never found it.\n    at guestDashboard.dashboardCheck (https://www.phptravels.net/__cypress/tests?p=cypress/Features/LoginToDashboard.feature:133:10)\n    at Context.eval (https://www.phptravels.net/__cypress/tests?p=cypress/Features/LoginToDashboard.feature:80:18)\n    at Context.resolveAndRunStepDefinition (https://www.phptravels.net/__cypress/tests?p=cypress/Features/LoginToDashboard.feature:10717:29)\n    at Context.eval (https://www.phptravels.net/__cypress/tests?p=cypress/Features/LoginToDashboard.feature:10038:35)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "the user provides valid credentials and submit to Login",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "the user should see the User Dashboard",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "login-to-dashboard;login-to-dashboard-with-invalid-credentials",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Login to Dashboard with Invalid Credentials",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "the user navigates to login page from guest Dashboard",
+            "result": {
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `//title[text()='PHPTRAVELS - PHPTRAVELS']`, but never found it.\n    at guestDashboard.dashboardCheck (https://www.phptravels.net/__cypress/tests?p=cypress/Features/LoginToDashboard.feature:133:10)\n    at Context.eval (https://www.phptravels.net/__cypress/tests?p=cypress/Features/LoginToDashboard.feature:80:18)\n    at Context.resolveAndRunStepDefinition (https://www.phptravels.net/__cypress/tests?p=cypress/Features/LoginToDashboard.feature:10717:29)\n    at Context.eval (https://www.phptravels.net/__cypress/tests?p=cypress/Features/LoginToDashboard.feature:10038:35)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "the user provides Invalid credentials and submit to Login",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "the user should see the error message in Login screen",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

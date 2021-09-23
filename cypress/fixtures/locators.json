@@ -1,0 +1,17 @@
+{
+    "Guest Dashboard Screen":{
+        "guest.title": "//title[text()='PHPTRAVELS - PHPTRAVELS']",
+        "guest.login": "//a[text()='Login' and preceding-sibling::a[text()='Signup']]"
+    },
+    "Login Screen":{
+        "login.title": "//title[text()='Login - PHPTRAVELS']",
+        "login.username": "//input[@type='email']",
+        "login.password": "//input[@type='password']",
+        "login.loginBtn": "//button[@type='submit' and contains(.,'Login')]",
+        "login.invalidCreds": "//div[ancestor::div[@class='message'] and contains(., 'Wrong credentials')]"
+    },
+    "User Dashboard Screen":{
+        "user.Dashboard": "(//a[parent::li and text()[normalize-space()='Dashboard']])[2]"
+    }
+}
+
